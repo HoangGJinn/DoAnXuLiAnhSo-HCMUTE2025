@@ -13,7 +13,7 @@ SVM_MODEL_PATH = FACE_MODEL_DIR / 'svc.pkl'
 DETECTOR_MODEL_PATH = FACE_MODEL_DIR / 'face_detection_yunet_2023mar.onnx'
 RECOGNIZER_MODEL_PATH = FACE_MODEL_DIR / 'face_recognition_sface_2021dec.onnx'
 
-MY_DICT = ['Duy cute','Giap Xo', 'Hung Rom' ,'Tai gay', 'Vinh 30cm']
+MY_DICT = ['Thai Bao','Minh Duy', 'Hoang Giap' ,'Minh Tai', 'Thanh Vinh']
 COLORS = [(0, 255, 0), (255, 200, 200), (220, 220, 255), (255, 255, 0), (0, 255, 255)]
 
 @st.cache_resource

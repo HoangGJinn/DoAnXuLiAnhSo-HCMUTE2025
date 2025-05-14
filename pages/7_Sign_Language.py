@@ -115,6 +115,7 @@ if st.session_state["show_guide"]:
         with col1:
             st.markdown("""
             **Cách sử dụng ứng dụng:**
+            - Lưu ý: sử dụng tay phải
             - Nhấn nút Start để bắt đầu nhận diện ngôn ngữ ký hiệu.
             - Đưa tay vào camera theo ký hiệu ASL.
             - Khi ký hiệu ổn định, từ sẽ được thêm vào kết quả.
@@ -129,17 +130,21 @@ if st.session_state["show_guide"]:
 
         with col2:
             st.image("images/ImageProcessingAdvanced/Sample_ASL.jpg", caption="Minh họa ký hiệu tay", use_container_width=True)
-
         if st.button("🔽 Ẩn hướng dẫn"):
             st.session_state["show_guide"] = False
             st.rerun()
-
+    col1, col2, col3 = st.columns([3,3,2])
+    with col1:
+        st.image("images/ImageProcessingAdvanced/del_test.jpg", caption="Minh họa tính năng delete chữ")
+    with col2:
+        st.image("images/ImageProcessingAdvanced/space_test.jpg", caption= "Minh họa space - khoảng cách")
+    with col3:
+        st.image("images/ImageProcessingAdvanced/next_test2.png", caption= "Minh họa check")
 # --- Nút hiển thị nếu đang ẩn ---
 else:
     if st.button("❓ Hiển thị hướng dẫn"):
         st.session_state["show_guide"] = True
         st.rerun()
-
 # --- Thêm bố cục mới ---
 st.title("🧠 Nhận diện ngôn ngữ ký hiệu (ASL)")
 
